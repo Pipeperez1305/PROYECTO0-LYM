@@ -43,7 +43,6 @@ t_DOT = r'\.'
 t_UPDATE = r':='
 
 
-
 def t_ID(t):
 	r'[a-zA-Z_][a-zA-Z0-9_]*'
 	if t.value.upper() in reservadas:
