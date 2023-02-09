@@ -57,6 +57,7 @@ def t_ID(t):
 	elif t.value.upper() in X:
 		t.value = t.value
 		t.type = 'X'
+	
 	return t
 
 def t_newline(t):
@@ -74,7 +75,7 @@ def t_NUMBER(t):
 	return t
 
 def t_error(t):
-	print ("caracter ilegal '%s'" % t.value[0])
+	print ("")
 	t.lexer.skip(1)
 
 
