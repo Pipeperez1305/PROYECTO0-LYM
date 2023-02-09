@@ -75,7 +75,7 @@ def t_NUMBER(t):
 	return t
 
 def t_error(t):
-	print ("")
+	#print ("caracter ilegal '%s'" % t.value[0])
 	t.lexer.skip(1)
 
 
